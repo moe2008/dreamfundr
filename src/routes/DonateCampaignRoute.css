@@ -1,0 +1,142 @@
+.DonateCampaignWrapper {
+  position: relative;
+  height: 100vh;
+  max-width: 100vw;
+  z-index: 3;
+}
+
+.svgBG {
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../svgbg2.svg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  filter: blur(3px);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 130%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 130%
+  );
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-color: black;
+  z-index: -3;
+}
+
+.DonateCampaignHeaderWrapper {
+  display: flex;
+  width: 100%;
+  max-height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.DonateCampaignHeaderWrapper > h2 {
+  color: white;
+  font-family: "Pulchra";
+  font-size: 3rem;
+}
+
+.DonateCampaignContentWrapper {
+  display: flex;
+  width: 100%;
+  max-height: 80%;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .DonateCampaignContentWrapper {
+    display: flex;
+  }
+}
+
+.InputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  height: 50%;
+}
+
+.DonateCampaignContentWrapper > div > input,
+.DonateCampaignContentWrapper > div > textarea {
+  border-radius: 5px;
+  background: rgb(249, 250, 250);
+  border: 1px solid rgb(181, 189, 196);
+  font-size: 16px;
+  line-height: 24px;
+  padding: 7px 8px;
+  color: rgb(8, 9, 10);
+  box-shadow: none;
+  font-family: "Pulchra";
+  z-index: 6223;
+  :focus {
+    background-color: #fff;
+    border-color: #3b49df;
+    box-shadow: 1px 1px 0 #3b49df;
+  }
+}
+
+.DonateCampaignContentWrapper > div > button {
+  display: inline-block;
+  z-index: 3;
+  outline: 0;
+  appearance: none;
+  padding: 0px 12px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #008a00;
+  box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-family: "Pulchra";
+  font-weight: 400;
+  transition: all 150ms ease-in-out 0s;
+}
+.DonateCampaignContentWrapper > .InputDiv > p {
+  color: white;
+  font-family: "Pulchra";
+}
+.DonateCampaignAllCampaignWrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: black;
+}
+
+@media (max-width: 1024px) {
+  .DonateCampaignAllCampaignWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+  }
+}
+
+.AllCampaignSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.AllCampaignSection > h2 {
+  color: white;
+  font-size: 2rem;
+  align-self: center;
+  font-family: "Pulchra";
+}
