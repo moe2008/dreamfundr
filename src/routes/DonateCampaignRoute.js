@@ -69,6 +69,8 @@ const DonateCampaign = () => {
           msg: campaignData[5],
         };
 
+        console.log(campaignData[0]);
+
         if (campaign.deadline >= getActualDate() && !campaign.isFunded) {
           campaignsArray.push(campaign);
         }
