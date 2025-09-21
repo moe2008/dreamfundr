@@ -903,7 +903,6 @@ const DreamFundrLanding = () => {
                     animation: "pulse 2s infinite",
                   }}
                 ></div>
-                <p style={{ color: "#9ca3af" }}>Mission Illustration</p>
               </div>
             </div>
           </div>
@@ -1120,7 +1119,6 @@ const DreamFundrLanding = () => {
                     animation: "pulse 2s infinite",
                   }}
                 ></div>
-                <p style={{ color: "#9ca3af" }}>Process Visualization</p>
               </div>
             </div>
           </div>
